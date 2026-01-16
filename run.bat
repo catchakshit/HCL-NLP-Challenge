@@ -1,11 +1,11 @@
 @echo off
 echo ========================================
-echo   Starting HCL Copilot...
+echo   Starting HCL Copilot
 echo ========================================
 
 cd /d %~dp0
 
-echo Checking GROQ API key...
+echo Checking GROQ API key
 if "%GROQ_API_KEY%"=="" (
     echo.
     echo ERROR: GROQ_API_KEY is not set.
@@ -17,7 +17,7 @@ if "%GROQ_API_KEY%"=="" (
 )
 
 echo.
-echo Starting Streamlit App...
+echo Starting Streamlit App
 echo.
 
 py -m streamlit run app.py
